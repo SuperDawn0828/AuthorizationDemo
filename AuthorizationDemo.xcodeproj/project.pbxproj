@@ -12,6 +12,8 @@
 		E23D4F9D208E35D6008975B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23D4F9B208E35D6008975B8 /* Main.storyboard */; };
 		E23D4F9F208E35D6008975B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23D4F9E208E35D6008975B8 /* Assets.xcassets */; };
 		E23D4FA2208E35D6008975B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23D4FA0208E35D6008975B8 /* LaunchScreen.storyboard */; };
+		E2E1F4DD208F83AC003397BB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E1F4DC208F83AC003397BB /* LocationManager.swift */; };
+		E2E1F4E0208F83FB003397BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E1F4DF208F83FB003397BB /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E23D4F9E208E35D6008975B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E23D4FA1208E35D6008975B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E23D4FA3208E35D6008975B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E1F4DC208F83AC003397BB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E2E1F4DF208F83FB003397BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E1F4E0208F83FB003397BB /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				E23D4F96208E35D6008975B8 /* AuthorizationDemo */,
 				E23D4F95208E35D6008975B8 /* Products */,
+				E2E1F4DE208F83FB003397BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +60,7 @@
 		E23D4F96208E35D6008975B8 /* AuthorizationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E2E1F4DB208F839B003397BB /* LocationManager */,
 				E23D4F97208E35D6008975B8 /* AppDelegate.swift */,
 				E23D4F99208E35D6008975B8 /* ViewController.swift */,
 				E23D4F9B208E35D6008975B8 /* Main.storyboard */,
@@ -62,6 +69,22 @@
 				E23D4FA3208E35D6008975B8 /* Info.plist */,
 			);
 			path = AuthorizationDemo;
+			sourceTree = "<group>";
+		};
+		E2E1F4DB208F839B003397BB /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				E2E1F4DC208F83AC003397BB /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		E2E1F4DE208F83FB003397BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2E1F4DF208F83FB003397BB /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +160,7 @@
 			files = (
 				E23D4F9A208E35D6008975B8 /* ViewController.swift in Sources */,
 				E23D4F98208E35D6008975B8 /* AppDelegate.swift in Sources */,
+				E2E1F4DD208F83AC003397BB /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K93GK25J3C;
 				INFOPLIST_FILE = AuthorizationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K93GK25J3C;
 				INFOPLIST_FILE = AuthorizationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
